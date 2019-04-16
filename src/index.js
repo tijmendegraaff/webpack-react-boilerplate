@@ -1,9 +1,9 @@
-import React from "react";
-import { render } from "react-dom";
-import Header from "./components/header";
-import Text from "./components/text";
+import React from 'react';
+import { render } from 'react-dom';
+import Header from './components/header';
+import Text from './components/text';
 
-import "./styles/styles.scss";
+import './styles/styles.scss';
 
 const App = () => (
   <div>
@@ -12,4 +12,4 @@ const App = () => (
   </div>
 );
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById('app'));
