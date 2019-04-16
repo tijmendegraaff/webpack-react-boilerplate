@@ -8,6 +8,7 @@
     "build:prod": "webpack --config webpack/webpack.prod.js --progress"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
