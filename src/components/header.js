@@ -1,9 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-  <div className="header">
-    <h1>React Boilerplate</h1>
-  </div>
+  <header>
+    <h1>Boilerplate React Webpack App</h1>
+    <NavLink activeClassName="is-active" to="/" exact>
+      Dashboard
+    </NavLink>
+    <NavLink activeClassName="is-active" to="/create">
+      Add Task Page
+    </NavLink>
+  </header>
 );
 
 export default Header;

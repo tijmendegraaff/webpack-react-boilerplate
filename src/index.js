@@ -1,15 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './components/header';
-import Text from './components/text';
 
 import './styles/styles.scss';
 
-const App = () => (
-  <div>
-    <Header />
-    <Text />
-  </div>
-);
+import AppRouter from './routers/AppRouter';
 
-render(<App />, document.getElementById('app'));
+render(<AppRouter />, document.getElementById('app'));
