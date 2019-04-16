@@ -1,1 +1,1 @@
-Boilerplate Webpack React setup
+Boilerplate Webpack React

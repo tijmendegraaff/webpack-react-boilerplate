@@ -1,6 +1,7 @@
 const merge = require("webpack-merge");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
@@ -18,5 +19,5 @@ module.exports = merge(common, {
       })
     ]
   },
-  plugins: [new OptimizeCssAssetsPlugin()]
+  plugins: [new OptimizeCssAssetsPlugin(), new CleanWebpackPlugin()]
 });
