@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  // remove after redux playground
-  entry: path.resolve(__dirname, '../src/playground/redux-101.js'),
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
+    publicPath: '/',
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].[chunkhash].js',
   },
